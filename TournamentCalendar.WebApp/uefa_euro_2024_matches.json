@@ -1,0 +1,497 @@
+[
+    {
+        "Match Number": 1,
+        "Round": "1",
+        "Date": "2024-06-14T19:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "Germany",
+        "Away Team": "Scotland",
+        "Group": "Group A",
+        "ID": "527c0d32-0bf8-4fc8-8060-aa40c8575a77"
+    },
+    {
+        "Match Number": 2,
+        "Round": "1",
+        "Date": "2024-06-15T13:00:00",
+        "Location": "Stadion K\u00f6ln",
+        "Home Team": "Hungary",
+        "Away Team": "Switzerland",
+        "Group": "Group A",
+        "ID": "ccae1dee-14f1-45a5-b0ea-f465d9e0e38b"
+    },
+    {
+        "Match Number": 3,
+        "Round": "1",
+        "Date": "2024-06-15T16:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "Spain",
+        "Away Team": "Croatia",
+        "Group": "Group B",
+        "ID": "6000afbb-37f0-4f83-b7ab-0323ee06a0fe"
+    },
+    {
+        "Match Number": 4,
+        "Round": "1",
+        "Date": "2024-06-15T19:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "Italy",
+        "Away Team": "Albania",
+        "Group": "Group B",
+        "ID": "b2365d8b-4a1a-406d-b1ec-3fcc53d68bad"
+    },
+    {
+        "Match Number": 5,
+        "Round": "1",
+        "Date": "2024-06-16T13:00:00",
+        "Location": "Volksparkstadion",
+        "Home Team": "Poland",
+        "Away Team": "Netherlands",
+        "Group": "Group D",
+        "ID": "c156692d-3ba9-4096-ab6a-8582c25f27ca"
+    },
+    {
+        "Match Number": 6,
+        "Round": "1",
+        "Date": "2024-06-16T16:00:00",
+        "Location": "Arena Stuttgart",
+        "Home Team": "Slovenia",
+        "Away Team": "Denmark",
+        "Group": "Group C",
+        "ID": "f8ec5195-4b90-4227-8a67-fdc61f3d05dd"
+    },
+    {
+        "Match Number": 7,
+        "Round": "1",
+        "Date": "2024-06-16T19:00:00",
+        "Location": "Arena AufSchalke",
+        "Home Team": "Serbia",
+        "Away Team": "England",
+        "Group": "Group C",
+        "ID": "ead5ffad-36e7-4571-96de-7d6483f1f5eb"
+    },
+    {
+        "Match Number": 8,
+        "Round": "1",
+        "Date": "2024-06-17T13:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "Romania",
+        "Away Team": "Ukraine",
+        "Group": "Group E",
+        "ID": "0a225024-1e1d-4e1d-9e2e-a1eedca88d2e"
+    },
+    {
+        "Match Number": 9,
+        "Round": "1",
+        "Date": "2024-06-17T16:00:00",
+        "Location": "Frankfurt Stadion",
+        "Home Team": "Belgium",
+        "Away Team": "Slovakia",
+        "Group": "Group E",
+        "ID": "1560f1e6-dcc2-43fc-a150-3fa4134279c9"
+    },
+    {
+        "Match Number": 10,
+        "Round": "1",
+        "Date": "2024-06-17T19:00:00",
+        "Location": "D\u00fcsseldorf Arena",
+        "Home Team": "Austria",
+        "Away Team": "France",
+        "Group": "Group D",
+        "ID": "6ce120be-4487-40f8-848f-ba8f7cdb96d2"
+    },
+    {
+        "Match Number": 11,
+        "Round": "1",
+        "Date": "2024-06-18T16:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "T\u00fcrkiye",
+        "Away Team": "Georgia",
+        "Group": "Group F",
+        "ID": "cbad8e00-c656-458a-a292-e773b338f36b"
+    },
+    {
+        "Match Number": 12,
+        "Round": "1",
+        "Date": "2024-06-18T19:00:00",
+        "Location": "RB Arena",
+        "Home Team": "Portugal",
+        "Away Team": "Czechia",
+        "Group": "Group F",
+        "ID": "584eb2ca-9d3d-4d98-a64f-13a452694fd8"
+    },
+    {
+        "Match Number": 13,
+        "Round": "2",
+        "Date": "2024-06-19T13:00:00",
+        "Location": "Volksparkstadion",
+        "Home Team": "Croatia",
+        "Away Team": "Albania",
+        "Group": "Group B",
+        "ID": "4576f640-64b3-4635-85ac-a7467bb988f3"
+    },
+    {
+        "Match Number": 14,
+        "Round": "2",
+        "Date": "2024-06-19T16:00:00",
+        "Location": "Arena Stuttgart",
+        "Home Team": "Germany",
+        "Away Team": "Hungary",
+        "Group": "Group A",
+        "ID": "c0adc514-52e2-49df-9191-cd7bf9ea8a52"
+    },
+    {
+        "Match Number": 15,
+        "Round": "2",
+        "Date": "2024-06-19T19:00:00",
+        "Location": "Stadion K\u00f6ln",
+        "Home Team": "Scotland",
+        "Away Team": "Switzerland",
+        "Group": "Group A",
+        "ID": "1283384d-0858-4358-aedb-7bce5ea1261f"
+    },
+    {
+        "Match Number": 16,
+        "Round": "2",
+        "Date": "2024-06-20T13:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "Slovenia",
+        "Away Team": "Serbia",
+        "Group": "Group C",
+        "ID": "f2c9ba53-58a8-43b5-8755-1180f4504931"
+    },
+    {
+        "Match Number": 17,
+        "Round": "2",
+        "Date": "2024-06-20T16:00:00",
+        "Location": "Frankfurt Stadion",
+        "Home Team": "Denmark",
+        "Away Team": "England",
+        "Group": "Group C",
+        "ID": "e0992c4a-f898-401d-9397-3ba190075fcd"
+    },
+    {
+        "Match Number": 18,
+        "Round": "2",
+        "Date": "2024-06-20T19:00:00",
+        "Location": "Arena AufSchalke",
+        "Home Team": "Spain",
+        "Away Team": "Italy",
+        "Group": "Group B",
+        "ID": "908dadea-c7cd-4237-ab06-1a0029b53876"
+    },
+    {
+        "Match Number": 19,
+        "Round": "2",
+        "Date": "2024-06-21T13:00:00",
+        "Location": "D\u00fcsseldorf Arena",
+        "Home Team": "Slovakia",
+        "Away Team": "Ukraine",
+        "Group": "Group E",
+        "ID": "c15d77e0-29a9-4579-ac00-c7a156822a18"
+    },
+    {
+        "Match Number": 20,
+        "Round": "2",
+        "Date": "2024-06-21T16:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "Poland",
+        "Away Team": "Austria",
+        "Group": "Group D",
+        "ID": "aa5b0f55-ee97-4081-903b-e8791f1515f0"
+    },
+    {
+        "Match Number": 21,
+        "Round": "2",
+        "Date": "2024-06-21T19:00:00",
+        "Location": "RB Arena",
+        "Home Team": "Netherlands",
+        "Away Team": "France",
+        "Group": "Group D",
+        "ID": "34c82574-c9f9-41e2-b663-cbfef9d98a28"
+    },
+    {
+        "Match Number": 22,
+        "Round": "2",
+        "Date": "2024-06-22T13:00:00",
+        "Location": "Volksparkstadion",
+        "Home Team": "Georgia",
+        "Away Team": "Czechia",
+        "Group": "Group F",
+        "ID": "393e1a38-ff3b-4e5b-8996-38ae61fc0bc3"
+    },
+    {
+        "Match Number": 23,
+        "Round": "2",
+        "Date": "2024-06-22T16:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "T\u00fcrkiye",
+        "Away Team": "Portugal",
+        "Group": "Group F",
+        "ID": "aa5983b4-3c07-4d3c-b25b-8fe09d47d4f7"
+    },
+    {
+        "Match Number": 24,
+        "Round": "2",
+        "Date": "2024-06-22T19:00:00",
+        "Location": "Stadion K\u00f6ln",
+        "Home Team": "Belgium",
+        "Away Team": "Romania",
+        "Group": "Group E",
+        "ID": "88f8050d-d247-407d-9d12-f8dc398a5ad9"
+    },
+    {
+        "Match Number": 25,
+        "Round": "3",
+        "Date": "2024-06-23T19:00:00",
+        "Location": "Frankfurt Stadion",
+        "Home Team": "Switzerland",
+        "Away Team": "Germany",
+        "Group": "Group A",
+        "ID": "1e362153-9dbb-4c37-be34-141f887f9c25"
+    },
+    {
+        "Match Number": 26,
+        "Round": "3",
+        "Date": "2024-06-23T19:00:00",
+        "Location": "Arena Stuttgart",
+        "Home Team": "Scotland",
+        "Away Team": "Hungary",
+        "Group": "Group A",
+        "ID": "35537973-81f4-4ed2-82d1-2fd65b4b7e84"
+    },
+    {
+        "Match Number": 27,
+        "Round": "3",
+        "Date": "2024-06-24T19:00:00",
+        "Location": "D\u00fcsseldorf Arena",
+        "Home Team": "Albania",
+        "Away Team": "Spain",
+        "Group": "Group B",
+        "ID": "9bc9dd3f-e278-4094-ba27-cc9ccd85fae4"
+    },
+    {
+        "Match Number": 28,
+        "Round": "3",
+        "Date": "2024-06-24T19:00:00",
+        "Location": "RB Arena",
+        "Home Team": "Croatia",
+        "Away Team": "Italy",
+        "Group": "Group B",
+        "ID": "7d854989-e113-4995-92e2-9d8419bc24a9"
+    },
+    {
+        "Match Number": 29,
+        "Round": "3",
+        "Date": "2024-06-25T16:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "Netherlands",
+        "Away Team": "Austria",
+        "Group": "Group D",
+        "ID": "22cd35a9-b0a9-4dd6-87b2-9b749243d5da"
+    },
+    {
+        "Match Number": 30,
+        "Round": "3",
+        "Date": "2024-06-25T16:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "France",
+        "Away Team": "Poland",
+        "Group": "Group D",
+        "ID": "c6cada86-b499-4882-beca-c005b2c1f635"
+    },
+    {
+        "Match Number": 31,
+        "Round": "3",
+        "Date": "2024-06-25T19:00:00",
+        "Location": "Stadion K\u00f6ln",
+        "Home Team": "England",
+        "Away Team": "Slovenia",
+        "Group": "Group C",
+        "ID": "1fb3bd67-ac6b-4bb1-8ad1-f8109ce23c2c"
+    },
+    {
+        "Match Number": 32,
+        "Round": "3",
+        "Date": "2024-06-25T19:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "Denmark",
+        "Away Team": "Serbia",
+        "Group": "Group C",
+        "ID": "c68a9e31-50d1-481e-9c46-12beb05636f4"
+    },
+    {
+        "Match Number": 33,
+        "Round": "3",
+        "Date": "2024-06-26T16:00:00",
+        "Location": "Frankfurt Stadion",
+        "Home Team": "Slovakia",
+        "Away Team": "Romania",
+        "Group": "Group E",
+        "ID": "68e187e6-7c04-4ee4-90d7-34828910e9dc"
+    },
+    {
+        "Match Number": 34,
+        "Round": "3",
+        "Date": "2024-06-26T16:00:00",
+        "Location": "Arena Stuttgart",
+        "Home Team": "Ukraine",
+        "Away Team": "Belgium",
+        "Group": "Group E",
+        "ID": "e2770df5-a443-40bd-b5fe-322fc530b80b"
+    },
+    {
+        "Match Number": 35,
+        "Round": "3",
+        "Date": "2024-06-26T19:00:00",
+        "Location": "Arena AufSchalke",
+        "Home Team": "Georgia",
+        "Away Team": "Portugal",
+        "Group": "Group F",
+        "ID": "1613c2f8-7028-4a19-92e9-8b7cecb6a203"
+    },
+    {
+        "Match Number": 36,
+        "Round": "3",
+        "Date": "2024-06-26T19:00:00",
+        "Location": "Volksparkstadion",
+        "Home Team": "Czechia",
+        "Away Team": "T\u00fcrkiye",
+        "Group": "Group F",
+        "ID": "13391eec-58c0-466c-97d2-702e66fdbc3f"
+    },
+    {
+        "Match Number": 38,
+        "Round": "Round of 16",
+        "Date": "2024-06-29T16:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "2A",
+        "Away Team": "2B",
+        "ID": "58fb36f2-058e-47de-b3f4-67c12a2cde1d"
+    },
+    {
+        "Match Number": 37,
+        "Round": "Round of 16",
+        "Date": "2024-06-29T19:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "1A",
+        "Away Team": "2C",
+        "ID": "315b382f-125c-41cf-a2f4-012aedbcff3f"
+    },
+    {
+        "Match Number": 40,
+        "Round": "Round of 16",
+        "Date": "2024-06-30T16:00:00",
+        "Location": "Arena AufSchalke",
+        "Home Team": "1C",
+        "Away Team": "3D/E/F",
+        "ID": "f2ffbd46-ce42-4c1d-ae2d-2e4bef4746bc"
+    },
+    {
+        "Match Number": 39,
+        "Round": "Round of 16",
+        "Date": "2024-06-30T19:00:00",
+        "Location": "Stadion K\u00f6ln",
+        "Home Team": "1B",
+        "Away Team": "3A/D/E/F",
+        "ID": "5b99bb42-4267-416e-85c2-a8ed504cefb0"
+    },
+    {
+        "Match Number": 42,
+        "Round": "Round of 16",
+        "Date": "2024-07-01T16:00:00",
+        "Location": "D\u00fcsseldorf Arena",
+        "Home Team": "2D",
+        "Away Team": "2E",
+        "ID": "747a09b0-9c2f-4900-9de2-8c21c986c7be"
+    },
+    {
+        "Match Number": 41,
+        "Round": "Round of 16",
+        "Date": "2024-07-01T19:00:00",
+        "Location": "Frankfurt Stadion",
+        "Home Team": "1F",
+        "Away Team": "3A/B/C",
+        "ID": "04bda327-3d6d-4982-a303-173b32d2c693"
+    },
+    {
+        "Match Number": 43,
+        "Round": "Round of 16",
+        "Date": "2024-07-02T16:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "1E",
+        "Away Team": "3A/B/C/D",
+        "ID": "2e281ffd-95e2-4101-8d9f-26665e360d5b"
+    },
+    {
+        "Match Number": 44,
+        "Round": "Round of 16",
+        "Date": "2024-07-02T19:00:00",
+        "Location": "RB Arena",
+        "Home Team": "1D",
+        "Away Team": "2F",
+        "ID": "9dbc70e0-8e52-4d45-8d74-a47cc3e9cb6d"
+    },
+    {
+        "Match Number": 45,
+        "Round": "Quarter Finals",
+        "Date": "2024-07-05T16:00:00",
+        "Location": "Arena Stuttgart",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "189422b1-42aa-469d-81de-0c86b47b3aa0"
+    },
+    {
+        "Match Number": 46,
+        "Round": "Quarter Finals",
+        "Date": "2024-07-05T19:00:00",
+        "Location": "Volksparkstadion",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "814be55f-95f6-4773-9ee6-0ebde2994735"
+    },
+    {
+        "Match Number": 48,
+        "Round": "Quarter Finals",
+        "Date": "2024-07-06T16:00:00",
+        "Location": "D\u00fcsseldorf Arena",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "164ad6f3-ba66-44a8-9a87-f25946e65768"
+    },
+    {
+        "Match Number": 47,
+        "Round": "Quarter Finals",
+        "Date": "2024-07-06T19:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "c94aefdc-0632-47ef-a732-3add5bfc22ba"
+    },
+    {
+        "Match Number": 49,
+        "Round": "Semi Finals",
+        "Date": "2024-07-09T19:00:00",
+        "Location": "Fu\u00dfball Arena M\u00fcnchen",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "4cbbb9a6-1b31-42d6-9a06-efcb65447792"
+    },
+    {
+        "Match Number": 50,
+        "Round": "Semi Finals",
+        "Date": "2024-07-10T19:00:00",
+        "Location": "BVB Stadion Dortmund",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "2bfa0698-e965-4cc0-b65e-6ac8afeb3e86"
+    },
+    {
+        "Match Number": 51,
+        "Round": "Final",
+        "Date": "2024-07-14T19:00:00",
+        "Location": "Olympiastadion",
+        "Home Team": "TBC",
+        "Away Team": "TBC",
+        "ID": "13086e31-37bd-49d9-a867-f226cf68a346"
+    }
+]
