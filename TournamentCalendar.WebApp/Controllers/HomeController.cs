@@ -4,13 +4,14 @@ using TournamentCalendar.WebApp.Models;
 using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
 using Ical.Net.Serialization;
-using TournamentCalendarFunctionApp;
 using Ical.Net;
 using System.Text;
+using TournamentCalendar.DAL;
+using TournamentCalendar.DAL.JSONFactories;
 
 namespace TournamentCalendar.WebApp.Controllers
 {
-	public class HomeController : Controller
+    public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
 
@@ -29,12 +30,12 @@ namespace TournamentCalendar.WebApp.Controllers
 				Name = "VCALENDAR"
 			};
 
-			MatchFactory matchFactory = new MatchFactory(_logger);
+			IMatchFactory matchFactory = new JSONMatchFactory("uefa_euro_2024_teams.json", "uefa_euro_2024_matches.json", _logger);
 
 
 			_logger.LogInformation("Using MatchFactory to get matches");
-			IList<Match> matches = matchFactory.GetMatches();
-			_logger.LogInformation("{matchCount} matches retrieved", matches.Count);
+			var matches = matchFactory.GetMatches();
+			_logger.LogInformation("{matchCount} matches retrieved", matches.Count());
 
 
 			_logger.LogInformation("Processing matches into calendar");
