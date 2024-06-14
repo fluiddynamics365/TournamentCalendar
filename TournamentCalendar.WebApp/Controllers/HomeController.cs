@@ -54,8 +54,8 @@ namespace TournamentCalendar.WebApp.Controllers
 
 				var e = new CalendarEvent
 				{
-					Start = new CalDateTime(matchDate),
-					End = new CalDateTime(matchDate.Add(duration)),
+					Start = new CalDateTime(matchDate, "UTC"),
+					End = new CalDateTime(matchDate.Add(duration), "UTC"),
 					Summary = summary,
 					Location = match.Location,
 					Uid = match.ID.ToString()
