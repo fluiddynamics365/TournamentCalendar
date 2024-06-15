@@ -38,7 +38,7 @@ namespace TournamentCalendar.Tests
             };
             var matches = new List<Fixture>
             {
-                new Fixture { MatchNumber = 1, Round = "Group Stage", Date = "2024-06-14", Location = "City A", HomeTeam = "Team A", AwayTeam = "Team B", Group = "A", ID = Guid.NewGuid() }
+                new Fixture { MatchNumber = 1, Round = "Group Stage", Date = new DateTime(2024,6,14), Location = "City A", HomeTeam = "Team A", AwayTeam = "Team B", Group = "A", ID = Guid.NewGuid() }
             };
 
             _mockJsonSerializer.Setup(js => js.Deserialize<List<Team>>(It.IsAny<string>())).Returns(teams);
