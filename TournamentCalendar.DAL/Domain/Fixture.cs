@@ -4,9 +4,10 @@ namespace TournamentCalendar.DAL.Domain
 {
     public class Fixture
     {
+        [JsonPropertyName("Match Number")]
         public int MatchNumber { get; set; }
         public string Round { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Location { get; set; }
 
         [JsonPropertyName("Home Team")]

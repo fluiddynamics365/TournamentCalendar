@@ -1,9 +1,38 @@
-﻿@{
+﻿@model IEnumerable<TournamentCalendar.DAL.Domain.Fixture>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    \ud83c\udde9\ud83c\uddea
-</div>
+
+<h2>Fixtures</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Match Number</th>
+            <th>Round</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Group</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fixture in Model)
+        {
+            <tr>
+                <td>@fixture.MatchNumber</td>
+                <td>@fixture.Round</td>
+                <td>@fixture.Date.ToString("g")</td>
+                <td>@fixture.Location</td>
+                <td>@fixture.HomeTeamEmoji @fixture.HomeTeam</td>
+                <td>@fixture.AwayTeamEmoji @fixture.AwayTeam</td>
+                <td>@fixture.Group</td>
+                <td>@fixture.Result</td>
+            </tr>
+        }
+    </tbody>
+</table>
