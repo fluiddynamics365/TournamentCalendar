@@ -4,6 +4,6 @@ namespace TournamentCalendar.DAL
 {
     public interface IMatchFactory
     {
-        IEnumerable<Fixture> GetMatches();
+        IEnumerable<MatchData> GetMatches();
     }
 }

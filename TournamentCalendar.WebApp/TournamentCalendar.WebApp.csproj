@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TournamentCalendar.DAL\TournamentCalendar.DAL.csproj" />
+    <ProjectReference Include="..\TournamentCalendar.Services\TournamentCalendar.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
-
 </Project>

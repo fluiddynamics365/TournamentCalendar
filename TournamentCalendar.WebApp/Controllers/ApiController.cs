@@ -1,26 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using TournamentCalendar.WebApp.Models;
 using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
 using Ical.Net.Serialization;
 using Ical.Net;
 using System.Text;
-using TournamentCalendar.DAL;
-using TournamentCalendar.DAL.JSONFactories;
+using TournamentCalendar.Services;
 
 namespace TournamentCalendar.WebApp.Controllers
 {
     public class ApiController : Controller
 	{
 		private readonly ILogger<ApiController> _logger;
+        private IConfiguration _configuration;
 
-		public ApiController(ILogger<ApiController> logger)
-		{
-			_logger = logger;
-		}
+        public ApiController(ILogger<ApiController> logger, IConfiguration configuration)
+        {
+            _logger = logger;
+            _configuration = configuration;
+        }
 
-    public IActionResult GetCalendar()
+        public IActionResult GetCalendar()
 		{
 			// Create the calendar
 			var calendar = new Calendar
@@ -30,11 +29,13 @@ namespace TournamentCalendar.WebApp.Controllers
 				Name = "VCALENDAR"
 			};
 
-			IMatchFactory matchFactory = new JSONMatchFactory("uefa_euro_2024_teams.json", "uefa_euro_2024_matches.json", _logger);
+
+            var providerType = _configuration["DataSource:Provider"];
+            MatchService matchService = new(providerType, _logger);
 
 
-			_logger.LogInformation("Using MatchFactory to get matches");
-			var matches = matchFactory.GetMatches();
+			_logger.LogInformation("Using matchService to get matches");
+			var matches = matchService.GetMatches();
 			_logger.LogInformation("{matchCount} matches retrieved", matches.Count());
 
 

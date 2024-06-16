@@ -1,17 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TournamentCalendar.DAL;
-using TournamentCalendar.DAL.JSONFactories;
+using TournamentCalendar.Services;
 
 namespace TournamentCalendar.WebApp.Controllers
 {
     public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration _configuration;
 
-		public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
 		{
 			_logger = logger;
-		}
+            _configuration = configuration;
+        }
 
         public IActionResult GetCalendar()
 		{
@@ -20,10 +21,9 @@ namespace TournamentCalendar.WebApp.Controllers
 
 		 public ActionResult Index()
         {
-			IMatchFactory matchFactory = new JSONMatchFactory("uefa_euro_2024_teams.json", "uefa_euro_2024_matches.json", _logger);
-
-			_logger.LogInformation("Using MatchFactory to get matches");
-			var matches = matchFactory.GetMatches();
+            var providerType = _configuration["DataSource:Provider"];
+            IMatchService matchService = new MatchService(providerType, _logger);
+			var matches = matchService.GetMatches();
 
             return View(matches);
         }

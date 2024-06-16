@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using System.IO;
-using System.Text.Json;
 using TournamentCalendar.DAL.Domain;
 using TournamentCalendar.DAL.FileAccess;
 
@@ -29,15 +27,15 @@ namespace TournamentCalendar.DAL.JSONFactories
         }
 
 
-        public IEnumerable<Fixture> GetMatches()
+        public IEnumerable<MatchData> GetMatches()
         {
-            List<Team> teams;
-            List<Fixture> matches;
+            List<TeamData> teams;
+            List<MatchData> matches;
 
             _logger.LogInformation("Retrieving teams...");
             try
             {
-                teams = _jsonSerializer.Deserialize<List<Team>>(_fileAccessor.ReadAllText(_teamsJsonPath));
+                teams = _jsonSerializer.Deserialize<List<TeamData>>(_fileAccessor.ReadAllText(_teamsJsonPath));
             }
             catch (Exception e)
             {
@@ -48,7 +46,7 @@ namespace TournamentCalendar.DAL.JSONFactories
             _logger.LogInformation("Retrieving matches...");
             try
             {
-                matches = _jsonSerializer.Deserialize<List<Fixture>>(_fileAccessor.ReadAllText(_matchesJsonPath));
+                matches = _jsonSerializer.Deserialize<List<MatchData>>(_fileAccessor.ReadAllText(_matchesJsonPath));
             }
             catch (Exception e)
             {
@@ -58,7 +56,7 @@ namespace TournamentCalendar.DAL.JSONFactories
 
 
             Dictionary<string, string> teamEmojis = new();
-            foreach (Team team in teams)
+            foreach (TeamData team in teams)
             {
                 teamEmojis[team.team_name] = team.emoji;
             }

@@ -32,24 +32,24 @@ namespace TournamentCalendar.Tests
         public void GetMatches_ShouldReturnMatches_WhenJsonIsValid()
         {
             // Arrange
-            var teams = new List<Team>
+            var teams = new List<TeamData>
             {
-                new Team { team_name = "Team A", emoji = "🏆" }
+                new TeamData { team_name = "Team A", emoji = "🏆" }
             };
-            var matches = new List<Fixture>
+            var matches = new List<MatchData>
             {
-                new Fixture { MatchNumber = 1, Round = "Group Stage", Date = new DateTime(2024,6,14), Location = "City A", HomeTeam = "Team A", AwayTeam = "Team B", Group = "A", ID = Guid.NewGuid() }
+                new MatchData { MatchNumber = 1, Round = "Group Stage", Date = new DateTime(2024,6,14), Location = "City A", HomeTeam = "Team A", AwayTeam = "Team B", Group = "A", ID = Guid.NewGuid() }
             };
 
-            _mockJsonSerializer.Setup(js => js.Deserialize<List<Team>>(It.IsAny<string>())).Returns(teams);
-            _mockJsonSerializer.Setup(js => js.Deserialize<List<Fixture>>(It.IsAny<string>())).Returns(matches);
+            _mockJsonSerializer.Setup(js => js.Deserialize<List<TeamData>>(It.IsAny<string>())).Returns(teams);
+            _mockJsonSerializer.Setup(js => js.Deserialize<List<MatchData>>(It.IsAny<string>())).Returns(matches);
 
             var factory = new JSONMatchFactory(_teamsJsonPath, _matchesJsonPath, _mockLogger.Object, _mockJsonSerializer.Object, _mockFileAccessor.Object);
             // Act
             var result = factory.GetMatches();
 
             // Assert
-            var matchList = new List<Fixture>(result);
+            var matchList = new List<MatchData>(result);
             Assert.That(matchList, Has.Count.EqualTo(1));
             Assert.That(matchList[0].HomeTeam, Is.EqualTo("Team A"));
             Assert.That(matchList[0].AwayTeam, Is.EqualTo("Team B"));
@@ -60,12 +60,12 @@ namespace TournamentCalendar.Tests
         public void GetMatches_ShouldThrowException_WhenTeamsJsonIsInvalid()
         {
             // Arrange
-            _mockJsonSerializer.Setup(js => js.Deserialize<List<Team>>(It.IsAny<string>())).Throws<JsonException>();
+            _mockJsonSerializer.Setup(js => js.Deserialize<List<TeamData>>(It.IsAny<string>())).Throws<JsonException>();
 
             // Act & Assert
             Assert.Throws<JsonException>(() => {
                 var result = _factory.GetMatches();
-                _ = new List<Fixture>(result);
+                _ = new List<MatchData>(result);
             });
             _mockLogger.Verify(
                 logger => logger.Log(
@@ -83,18 +83,18 @@ namespace TournamentCalendar.Tests
         public void GetMatches_ShouldThrowException_WhenMatchesJsonIsInvalid()
         {
             // Arrange
-            var teams = new List<Team>
+            var teams = new List<TeamData>
             {
-                new Team { team_name = "Team A", emoji = "🏆" }
+                new TeamData { team_name = "Team A", emoji = "🏆" }
             };
 
-            _mockJsonSerializer.Setup(js => js.Deserialize<List<Team>>(It.IsAny<string>())).Returns(teams);
-            _mockJsonSerializer.Setup(js => js.Deserialize<List<Fixture>>(It.IsAny<string>())).Throws<JsonException>();
+            _mockJsonSerializer.Setup(js => js.Deserialize<List<TeamData>>(It.IsAny<string>())).Returns(teams);
+            _mockJsonSerializer.Setup(js => js.Deserialize<List<MatchData>>(It.IsAny<string>())).Throws<JsonException>();
 
             // Act & Assert
             Assert.Throws<JsonException>(() => {
                 var result = _factory.GetMatches();
-                _ = new List<Fixture>(result);
+                _ = new List<MatchData>(result);
             });
             _mockLogger.Verify(
                 logger => logger.Log(

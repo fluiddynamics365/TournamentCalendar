@@ -2,10 +2,13 @@
 
 namespace TournamentCalendar.DAL.Domain
 {
-    public class Fixture
+    public class MatchData
     {
+        public Guid ID { get; set; }
+
         [JsonPropertyName("Match Number")]
         public int MatchNumber { get; set; }
+
         public string Round { get; set; }
         public DateTime Date { get; set; }
         public string Location { get; set; }
@@ -20,8 +23,6 @@ namespace TournamentCalendar.DAL.Domain
         public string Result { get; set; }
         public string HomeTeamEmoji { get; set; }
         public string AwayTeamEmoji { get; set; }
-        public Guid ID { get; set; }
-
 
     }
 }
