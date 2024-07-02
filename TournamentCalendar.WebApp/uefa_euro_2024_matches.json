@@ -437,7 +437,7 @@
         "Date": "2024-07-05T16:00:00",
         "Location": "Arena Stuttgart",
         "Home Team": "Germany",
-        "Away Team": "TBC",
+        "Away Team": "Spain",
         "ID": "189422b1-42aa-469d-81de-0c86b47b3aa0"
     },
     {
@@ -445,8 +445,8 @@
         "Round": "Quarter Finals",
         "Date": "2024-07-05T19:00:00",
         "Location": "Volksparkstadion",
-        "Home Team": "TBC",
-        "Away Team": "TBC",
+        "Home Team": "Portugal",
+        "Away Team": "France",
         "ID": "814be55f-95f6-4773-9ee6-0ebde2994735"
     },
     {
@@ -463,8 +463,8 @@
         "Round": "Quarter Finals",
         "Date": "2024-07-06T19:00:00",
         "Location": "Olympiastadion",
-        "Home Team": "TBC",
-        "Away Team": "TBC",
+        "Home Team": "Netherlands",
+        "Away Team": "T\u00fcrkiye",
         "ID": "c94aefdc-0632-47ef-a732-3add5bfc22ba"
     },
     {
